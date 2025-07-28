@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطوة - جولات سهلة لكلاب سعيدة</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Tajawal for Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Applying the Arabic font to the body */
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        /* Custom class for a subtle text shadow to improve readability on busy backgrounds */
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Hero Section Container -->
+    <div class="relative min-h-screen w-full flex flex-col">
+        <!-- Background Image with a dark overlay for better text contrast -->
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1558929996-da64ba858215?q=80&w=2070&auto=format&fit=crop" 
+                 alt="امرأة تمشي مع كلبها في حديقة خضراء" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+        </div>
+
+        <!-- Content Wrapper -->
+        <div class="relative z-10 flex flex-col flex-grow p-6 sm:p-8 lg:p-12">
+            
+            <!-- Header/Navigation -->
+            <header class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold text-shadow">خطوة</a>
+                
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-6 lg:space-x-8 text-lg">
+                    <a href="#" class="hover:text-gray-300 transition-colors duration-300 text-shadow">جولات</a>
+                    <a href="#" class="hover:text-gray-300 transition-colors duration-300 text-shadow">مسارات</a>
+                    <a href="#" class="hover:text-gray-300 transition-colors duration-300 text-shadow">نصائح</a>
+                    <a href="#" class="hover:text-gray-300 transition-colors duration-300 text-shadow">تواصل معنا</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </header>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-80 rounded-lg mt-4">
+                <a href="#" class="block text-center py-3 px-4 text-lg hover:bg-gray-700">جولات</a>
+                <a href="#" class="block text-center py-3 px-4 text-lg hover:bg-gray-700">مسارات</a>
+                <a href="#" class="block text-center py-3 px-4 text-lg hover:bg-gray-700">نصائح</a>
+                <a href="#" class="block text-center py-3 px-4 text-lg hover:bg-gray-700">تواصل معنا</a>
+            </div>
+
+            <!-- Main Content -->
+            <main class="flex-grow flex items-center">
+                <div class="max-w-xl">
+                    <!-- Social Proof -->
+                    <div class="flex items-center mb-4">
+                        <div class="flex -space-x-2 rtl:space-x-reverse overflow-hidden">
+                            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e586910b323f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        </div>
+                        <p class="mr-3 text-sm text-gray-200 text-shadow">يثق بنا أكثر من 100 من محبي التمشية</p>
+                    </div>
+
+                    <!-- Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-shadow">
+                        جولات سهلة <br> لكلاب سعيدة
+                    </h1>
+                    
+                    <!-- Subheading -->
+                    <p class="mt-6 text-lg lg:text-xl max-w-lg text-gray-200 text-shadow">
+                        لأصحاب الكلاب الباحثين عن مسارات موثوقة، وأماكن آمنة، وروتين يومي أفضل.
+                    </p>
+                    
+                    <!-- CTA Button -->
+                    <button class="mt-8 px-8 py-3 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-gray-300">
+                        خطط لجولتك
+                    </button>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="flex justify-between items-center text-sm text-gray-300">
+                <p class="text-shadow">© خطوة • 2025</p>
+                <p class="text-shadow">تمشية جيدة لكليكما.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for the mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
